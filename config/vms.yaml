@@ -8,13 +8,13 @@ vms:
     debug-kit: true
     box: puppetlabs/centos-6.6-64-nocm
     roles:
+      - r10k
+      - el-utils
       - pe-forward-console
       - el-stop-firewall
       - el-fix-path
       - 2gb-memory
       - base
-      - el-utils
-      - r10k
 
   - name: pe-381-agent
     debug-kit: true
