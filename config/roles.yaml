@@ -16,9 +16,10 @@ roles:
       - type: shell
         inline: |
           repo=puppet-r10k
-          git clone https://github.com/snemetz/${repo}.git
-          cd ${repo}
-          ./install.sh
-          cd ..
-          rm -rf ${repo}
+          git clone https://github.com/snemetz/${repo}.git /root/${repo}
+          # Can't install until after Puppet is installed
+          #cd ${repo}
+          #./install.sh
+          #cd ..
+          #rm -rf ${repo}
 
