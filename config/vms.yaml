@@ -24,4 +24,13 @@ vms:
       - el-fix-path
       - base
 
+  - name: pe-381-agent-jenkins
+    debug-kit: true
+    box: puppetlabs/centos-6.6-64-nocm
+    roles:
+      - forward-jenkins
+      - el-stop-firewall
+      - el-fix-path
+      - base
+
 # vim: set ft=yaml:
