@@ -31,6 +31,39 @@ vms:
       - forward-jenkins
       - el-stop-firewall
       - el-fix-path
+      - 1gb-memory
+      - base
+
+  - name: pe-381-agent-storage-01
+    debug-kit: true
+    box: puppetlabs/centos-7.0-64-nocm
+    roles:
+      - el-stop-firewall
+      - el-fix-path
+      - base
+
+  - name: pe-381-agent-storage-02
+    debug-kit: true
+    box: puppetlabs/centos-7.0-64-nocm
+    roles:
+      - el-stop-firewall
+      - el-fix-path
+      - base
+
+  - name: pe-381-agent-storage-03
+    debug-kit: true
+    box: puppetlabs/centos-7.0-64-nocm
+    roles:
+      - el-stop-firewall
+      - el-fix-path
+      - base
+
+  - name: pe-381-agent-storage-04
+    debug-kit: true
+    box: puppetlabs/centos-7.0-64-nocm
+    roles:
+      - el-stop-firewall
+      - el-fix-path
       - base
 
 # vim: set ft=yaml:
