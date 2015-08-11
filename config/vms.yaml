@@ -37,7 +37,6 @@ vms:
   - name: pe-381-agent-app
     debug-kit: true
     box: puppetlabs/centos-6.6-64-nocm
-    roles:
       - el-stop-firewall
       - el-fix-path
       - base
